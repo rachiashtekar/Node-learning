@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=name%></title>
+    <style>
+        .image{
+            height: 200px;
+            width: 150px;
+        }
+        body{
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1><%=name%></h1>
+<img class="image" src="<%=image%>">
+     <p><%=email%></p>
+     <ul>
+     <% hobbies.forEach((hobby) => {%>
+        <li><%= hobby %></li>
+        
+     <%}); %>
+    </ul>
+    <% if(ispremium){ %>
+    <p>premium user ⭐</p>
+    <% } %>
+
+    
+    
+     
+
+ </body>
+</html>
